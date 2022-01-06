@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title> test 1 </title>
+</head>
+<body>
+   <div id="div1"> declencheur</div> 
+ <script>
+     var div1=document.querySelector('#div1');
+     div1.addEventListener('click',Message);
+     function Message(event){
+         this.innerHTML= 'bonjour <br> la vie'+event.target+'<br>'+event.currentTarget+'<br>'+event.type;
+     }
+ </script>
+</body>
+</html>
